@@ -11,10 +11,10 @@ namespace NerdStore.Catalago.Application.ViewModels
         public Guid CategoriaId { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        public required string Nome { get; set; }
+        public string? Nome { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        public required string Descricao { get; set; }
+        public string? Descricao { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public bool Ativo { get; set; }
@@ -26,7 +26,7 @@ namespace NerdStore.Catalago.Application.ViewModels
         public DateTime DataCadastro { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        public required string Imagem { get; set; }
+        public string? Imagem { get; set; }
 
         [Range(1, int.MaxValue, ErrorMessage = "O campo {0} precisa ter o valor mínimo de {1}")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
